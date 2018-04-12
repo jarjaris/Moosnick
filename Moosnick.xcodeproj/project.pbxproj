@@ -7,13 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		081769B7207EF42B0064C350 /* SkullFace.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 081769B6207EF42B0064C350 /* SkullFace.jpg */; };
+		081769BB207EFCA90064C350 /* sectionGrid in Resources */ = {isa = PBXBuildFile; fileRef = 081769BA207EFCA90064C350 /* sectionGrid */; };
+		0847A9E3207FBCC100C8A1AA /* tenpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0847A9E2207FBCC100C8A1AA /* tenpViewController.swift */; };
 		16717AE12075607800274473 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16717AE02075607800274473 /* AppDelegate.swift */; };
-		16717AE32075607800274473 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16717AE22075607800274473 /* ViewController.swift */; };
 		16717AE62075607800274473 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 16717AE42075607800274473 /* Main.storyboard */; };
 		16717AE82075607800274473 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 16717AE72075607800274473 /* Assets.xcassets */; };
 		16717AEB2075607800274473 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 16717AE92075607800274473 /* LaunchScreen.storyboard */; };
 		16717AF62075607800274473 /* MoosnickTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16717AF52075607800274473 /* MoosnickTests.swift */; };
 		16717B012075607800274473 /* MoosnickUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16717B002075607800274473 /* MoosnickUITests.swift */; };
+		16717B0F207560AD00274473 /* MoosnickHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16717B0E207560AD00274473 /* MoosnickHomeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,9 +37,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		081769B6207EF42B0064C350 /* SkullFace.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = SkullFace.jpg; sourceTree = "<group>"; };
+		081769BA207EFCA90064C350 /* sectionGrid */ = {isa = PBXFileReference; lastKnownFileType = folder; path = sectionGrid; sourceTree = "<group>"; };
+		0847A9E2207FBCC100C8A1AA /* tenpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tenpViewController.swift; sourceTree = "<group>"; };
 		16717ADD2075607800274473 /* Moosnick.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Moosnick.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		16717AE02075607800274473 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		16717AE22075607800274473 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		16717AE52075607800274473 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		16717AE72075607800274473 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		16717AEA2075607800274473 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +52,7 @@
 		16717AFC2075607800274473 /* MoosnickUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MoosnickUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		16717B002075607800274473 /* MoosnickUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoosnickUITests.swift; sourceTree = "<group>"; };
 		16717B022075607800274473 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		16717B0E207560AD00274473 /* MoosnickHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoosnickHomeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +83,7 @@
 		16717AD42075607800274473 = {
 			isa = PBXGroup;
 			children = (
+				0847A9E2207FBCC100C8A1AA /* tenpViewController.swift */,
 				16717ADF2075607800274473 /* Moosnick */,
 				16717AF42075607800274473 /* MoosnickTests */,
 				16717AFF2075607800274473 /* MoosnickUITests */,
@@ -97,10 +104,12 @@
 		16717ADF2075607800274473 /* Moosnick */ = {
 			isa = PBXGroup;
 			children = (
+				081769BA207EFCA90064C350 /* sectionGrid */,
 				16717AE02075607800274473 /* AppDelegate.swift */,
-				16717AE22075607800274473 /* ViewController.swift */,
+				16717B0E207560AD00274473 /* MoosnickHomeViewController.swift */,
 				16717AE42075607800274473 /* Main.storyboard */,
 				16717AE72075607800274473 /* Assets.xcassets */,
+				081769B6207EF42B0064C350 /* SkullFace.jpg */,
 				16717AE92075607800274473 /* LaunchScreen.storyboard */,
 				16717AEC2075607800274473 /* Info.plist */,
 			);
@@ -232,8 +241,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				081769BB207EFCA90064C350 /* sectionGrid in Resources */,
 				16717AEB2075607800274473 /* LaunchScreen.storyboard in Resources */,
 				16717AE82075607800274473 /* Assets.xcassets in Resources */,
+				081769B7207EF42B0064C350 /* SkullFace.jpg in Resources */,
 				16717AE62075607800274473 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -259,8 +270,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				16717AE32075607800274473 /* ViewController.swift in Sources */,
 				16717AE12075607800274473 /* AppDelegate.swift in Sources */,
+				16717B0F207560AD00274473 /* MoosnickHomeViewController.swift in Sources */,
+				0847A9E3207FBCC100C8A1AA /* tenpViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

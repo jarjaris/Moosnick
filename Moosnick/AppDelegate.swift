@@ -7,7 +7,7 @@
 //
 
 import UIKit
-
+let themeColor = UIColor.green
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
