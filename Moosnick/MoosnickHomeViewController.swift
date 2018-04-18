@@ -18,7 +18,7 @@
 import UIKit
 
 class MoosnickHomeViewController: UIViewController {
-    
+    //what da fuck even is this 
     
     /*
      This screen serves as a sort of welcome screen to the app. There are two major features, named advertPicFlipper and topicScrollView.
