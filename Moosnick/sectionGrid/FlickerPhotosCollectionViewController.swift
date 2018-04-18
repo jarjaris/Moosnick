@@ -14,7 +14,6 @@ final class FlickerPhotosCollectionViewController: UICollectionViewController {
 
     fileprivate let reuseIdentifier = "theCell"
     fileprivate let sectionInsets = UIEdgeInsets(top: 50.0, left: 20.0, bottom: 50.0, right: 20.0)
-    fileprivate var searches = [FlickrSearchResults]()
     fileprivate let flickr = Flickr()
     fileprivate let itemsPerRow: CGFloat = 3
     override func viewDidLoad() {
@@ -72,13 +71,13 @@ extension FlickerPhotosCollectionViewController : UITextFieldDelegate {
 extension FlickerPhotosCollectionViewController {
     //1
     override func numberOfSections(in collectionView: UICollectionView) -> Int {
-        return searches.count
+        return 1
     }
     
     //2
     override func collectionView(_ collectionView: UICollectionView,
                                  numberOfItemsInSection section: Int) -> Int {
-        return searches[section].searchResults.count
+        return searchResults.count
     }
     
     //3
