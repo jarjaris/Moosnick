@@ -36,7 +36,7 @@ class MoosnickHomeViewController: UIViewController {
     
     let advertPics: [UIImage] = [#imageLiteral(resourceName: "day"), #imageLiteral(resourceName: "skull"), #imageLiteral(resourceName: "buttsmoke"), #imageLiteral(resourceName: "deadbabies")]
     let topicPics: [UIImage] = [#imageLiteral(resourceName: "jamie_day"), #imageLiteral(resourceName: "WaxVenusFullBody_sm"), #imageLiteral(resourceName: "moose3"), #imageLiteral(resourceName: "moose4"), #imageLiteral(resourceName: "moose5"), #imageLiteral(resourceName: "moose6"), #imageLiteral(resourceName: "moose7")]
-    let topicTitles: [String] = ["Intro", "Anatomy", "Mineral", "One Moose", "Two Moose", "Red Moose", "Blue Moose"]
+    let topicTitles: [String] = ["Intro", "Anatomy", "Moos", "One Moos", "Two Moos", "Red Moos", "Blue Moos"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -57,7 +57,7 @@ class MoosnickHomeViewController: UIViewController {
             advertPicFlipper.addSubview(newAdvertPic)
         }
         
-        //older and fuglier way of populating advertPicFlipper preserved for reference
+        //older and fuglier way of populating advertPicFlipper preserved in case I forgot something
         /*
          let advertPic1: UIImageView = UIImageView(frame: CGRect(x: (advertPicFlipperFrame.width*0), y: 0, width: advertPicFlipperFrame.width, height: advertPicFlipperFrame.height))
          advertPic1.image = advertPics[0]
@@ -91,8 +91,8 @@ class MoosnickHomeViewController: UIViewController {
         //sets up some basic stuff about topicScrollView
         topicScrollView = UIScrollView(frame: topicScrollFrame)
         topicScrollView.backgroundColor = UIColor.white
-        topicScrollView.layer.borderWidth = 4
-        topicScrollView.layer.borderColor = UIColor.lightGray.cgColor
+        topicScrollView.layer.borderWidth = 1
+        topicScrollView.layer.borderColor = UIColor.red.cgColor
         topicScrollView.indicatorStyle = UIScrollViewIndicatorStyle.black
         
         //populates the topicScrollView with buttons
@@ -134,7 +134,7 @@ class MoosnickHomeViewController: UIViewController {
             topicScrollView.addSubview(newTopicTitle)
         }
         
-        //The older and fuglier way of populating topicScrollView remains here for reference
+        //The older and fuglier way of populating topicScrollView remains here in case I forgot something
         /*
          let topicButton1: UIButton = UIButton(frame: CGRect(x: 390*0, y: 0, width: 300, height: 390))
          topicButton1.setImage(#imageLiteral(resourceName: "moose1"), for: UIControlState.normal)
@@ -215,6 +215,8 @@ class MoosnickHomeViewController: UIViewController {
          topicScrollView.addSubview(topicLabel7)
          */
         
+        //adds left and right arrows onto the topicScrollView
+        //otherwise it's not obvious the thing is scrollable
         let scrollLeftLabelFrame: CGRect = CGRect(x: topicScrollView.frame.origin.x, y: topicScrollView.frame.origin.y, width: CGFloat(topicOffset/2), height: topicScrollView.frame.height)
         let scrollRightLabelFrame: CGRect = CGRect(x: (topicScrollView.frame.origin.x + topicScrollView.frame.width - CGFloat(topicOffset/2)), y: topicScrollView.frame.origin.y, width: CGFloat(topicOffset/2), height: topicScrollView.frame.height)
         let scrollLeftLabel: UILabel = UILabel(frame: scrollLeftLabelFrame)
@@ -225,10 +227,10 @@ class MoosnickHomeViewController: UIViewController {
         scrollRightLabel.textAlignment = NSTextAlignment.center
         scrollLeftLabel.backgroundColor = UIColor.white
         scrollRightLabel.backgroundColor = UIColor.white
-        scrollLeftLabel.layer.borderWidth = 4
-        scrollRightLabel.layer.borderWidth = 4
-        scrollLeftLabel.layer.borderColor = UIColor.lightGray.cgColor
-        scrollRightLabel.layer.borderColor = UIColor.lightGray.cgColor
+        scrollLeftLabel.layer.borderWidth = 1
+        scrollRightLabel.layer.borderWidth = 1
+        scrollLeftLabel.layer.borderColor = UIColor.red.cgColor
+        scrollRightLabel.layer.borderColor = UIColor.red.cgColor
         
         //adds all the different elements as subviews to the viewcontroller
         self.view.addSubview(advertPicFlipper)
@@ -263,6 +265,8 @@ class MoosnickHomeViewController: UIViewController {
         }
         advertPicFlipper.scrollRectToVisible(nextPage, animated: true)
     }
+    
+    //when a button in topicScrollView is pressed, segue to relevant screen
     @objc func goToView(sender:UIButton!) {
         let tempB = sender
         switch tempB?.currentTitle {
