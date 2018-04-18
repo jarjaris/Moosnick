@@ -2,11 +2,11 @@
   "images" : [
     {
       "idiom" : "universal",
+      "filename" : "jamie_day.jpg",
       "scale" : "1x"
     },
     {
       "idiom" : "universal",
-      "filename" : "lorem-ipsum-dolor-sit-amet-5.png",
       "scale" : "2x"
     },
     {

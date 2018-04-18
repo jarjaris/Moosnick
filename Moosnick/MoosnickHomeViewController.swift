@@ -35,8 +35,8 @@ class MoosnickHomeViewController: UIViewController {
     let topicScrollFrame = CGRect(x: 0, y: 614, width: 768, height: 410) //the values get used to calculate a lot of other frames
     
     let advertPics: [UIImage] = [#imageLiteral(resourceName: "day"), #imageLiteral(resourceName: "skull"), #imageLiteral(resourceName: "buttsmoke"), #imageLiteral(resourceName: "deadbabies")]
-    let topicPics: [UIImage] = [#imageLiteral(resourceName: "moose1"), #imageLiteral(resourceName: "moose2"), #imageLiteral(resourceName: "moose3"), #imageLiteral(resourceName: "moose4"), #imageLiteral(resourceName: "moose5"), #imageLiteral(resourceName: "moose6"), #imageLiteral(resourceName: "moose7")]
-    let topicTitles: [String] = ["Animal", "Vegetable", "Mineral", "One Moose", "Two Moose", "Red Moose", "Blue Moose"]
+    let topicPics: [UIImage] = [#imageLiteral(resourceName: "jamie_day"), #imageLiteral(resourceName: "WaxVenusFullBody_sm"), #imageLiteral(resourceName: "moose3"), #imageLiteral(resourceName: "moose4"), #imageLiteral(resourceName: "moose5"), #imageLiteral(resourceName: "moose6"), #imageLiteral(resourceName: "moose7")]
+    let topicTitles: [String] = ["Intro", "Anatomy", "Mineral", "One Moose", "Two Moose", "Red Moose", "Blue Moose"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -215,11 +215,20 @@ class MoosnickHomeViewController: UIViewController {
          topicScrollView.addSubview(topicLabel7)
          */
         
+        let scrollLeftLabelFrame: CGRect = CGRect(x: topicScrollView.frame.origin.x, y: topicScrollView.frame.origin.y, width: CGFloat(topicOffset), height: topicScrollView.frame.height)
+        let scrollRightLabelFrame: CGRect = CGRect(x: (topicScrollView.frame.origin.x + topicScrollView.frame.width - CGFloat(topicOffset)), y: topicScrollView.frame.origin.y, width: CGFloat(topicOffset), height: topicScrollView.frame.height)
+        let scrollLeftLabel: UILabel = UILabel(frame: scrollLeftLabelFrame)
+        let scrollRightLabel: UILabel = UILabel(frame: scrollRightLabelFrame)
+        scrollLeftLabel.text = "<"
+        scrollRightLabel.text = ">"
+        
         //adds all the different elements as subviews to the viewcontroller
         self.view.addSubview(advertPicFlipper)
         self.view.addSubview(moosnickTitleCard)
         self.view.addSubview(advertPicPageControl)
         self.view.addSubview(topicScrollView)
+        self.view.addSubview(scrollLeftLabel)
+        self.view.addSubview(scrollRightLabel)
     }
     
     override func didReceiveMemoryWarning() {
