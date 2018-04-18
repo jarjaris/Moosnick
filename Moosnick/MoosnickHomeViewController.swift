@@ -215,12 +215,20 @@ class MoosnickHomeViewController: UIViewController {
          topicScrollView.addSubview(topicLabel7)
          */
         
-        let scrollLeftLabelFrame: CGRect = CGRect(x: topicScrollView.frame.origin.x, y: topicScrollView.frame.origin.y, width: CGFloat(topicOffset), height: topicScrollView.frame.height)
-        let scrollRightLabelFrame: CGRect = CGRect(x: (topicScrollView.frame.origin.x + topicScrollView.frame.width - CGFloat(topicOffset)), y: topicScrollView.frame.origin.y, width: CGFloat(topicOffset), height: topicScrollView.frame.height)
+        let scrollLeftLabelFrame: CGRect = CGRect(x: topicScrollView.frame.origin.x, y: topicScrollView.frame.origin.y, width: CGFloat(topicOffset/2), height: topicScrollView.frame.height)
+        let scrollRightLabelFrame: CGRect = CGRect(x: (topicScrollView.frame.origin.x + topicScrollView.frame.width - CGFloat(topicOffset/2)), y: topicScrollView.frame.origin.y, width: CGFloat(topicOffset/2), height: topicScrollView.frame.height)
         let scrollLeftLabel: UILabel = UILabel(frame: scrollLeftLabelFrame)
         let scrollRightLabel: UILabel = UILabel(frame: scrollRightLabelFrame)
         scrollLeftLabel.text = "<"
         scrollRightLabel.text = ">"
+        scrollLeftLabel.textAlignment = NSTextAlignment.center
+        scrollRightLabel.textAlignment = NSTextAlignment.center
+        scrollLeftLabel.backgroundColor = UIColor.white
+        scrollRightLabel.backgroundColor = UIColor.white
+        scrollLeftLabel.layer.borderWidth = 4
+        scrollRightLabel.layer.borderWidth = 4
+        scrollLeftLabel.layer.borderColor = UIColor.lightGray.cgColor
+        scrollRightLabel.layer.borderColor = UIColor.lightGray.cgColor
         
         //adds all the different elements as subviews to the viewcontroller
         self.view.addSubview(advertPicFlipper)
