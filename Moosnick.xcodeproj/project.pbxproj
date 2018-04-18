@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		081769B7207EF42B0064C350 /* SkullFace.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 081769B6207EF42B0064C350 /* SkullFace.jpg */; };
-		081769BB207EFCA90064C350 /* sectionGrid in Resources */ = {isa = PBXBuildFile; fileRef = 081769BA207EFCA90064C350 /* sectionGrid */; };
 		16717AE12075607800274473 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16717AE02075607800274473 /* AppDelegate.swift */; };
 		16717AE62075607800274473 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 16717AE42075607800274473 /* Main.storyboard */; };
 		16717AE82075607800274473 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 16717AE72075607800274473 /* Assets.xcassets */; };
@@ -38,7 +37,6 @@
 
 /* Begin PBXFileReference section */
 		081769B6207EF42B0064C350 /* SkullFace.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = SkullFace.jpg; sourceTree = "<group>"; };
-		081769BA207EFCA90064C350 /* sectionGrid */ = {isa = PBXFileReference; lastKnownFileType = folder; path = sectionGrid; sourceTree = "<group>"; };
 		16717ADD2075607800274473 /* Moosnick.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Moosnick.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		16717AE02075607800274473 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		16717AE52075607800274473 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -103,7 +101,6 @@
 		16717ADF2075607800274473 /* Moosnick */ = {
 			isa = PBXGroup;
 			children = (
-				081769BA207EFCA90064C350 /* sectionGrid */,
 				16717AE02075607800274473 /* AppDelegate.swift */,
 				16717B0E207560AD00274473 /* MoosnickHomeViewController.swift */,
 				16717AE42075607800274473 /* Main.storyboard */,
@@ -241,7 +238,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				081769BB207EFCA90064C350 /* sectionGrid in Resources */,
 				16717AEB2075607800274473 /* LaunchScreen.storyboard in Resources */,
 				16717AE82075607800274473 /* Assets.xcassets in Resources */,
 				081769B7207EF42B0064C350 /* SkullFace.jpg in Resources */,
